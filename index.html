@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 36, 56);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 54, 125);
+        }
+
+        nav ul {
+            display: flex;
+            justify-self: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(240, 163, 207);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(191, 35, 131);
+            height: 1.2px;
+            margin: 30px 90px;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 30px 0;
+        }
+
+        .leftsection .buttons {
+            padding: 20px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #8336c5;
+            color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+            font-style: italic;
+        }
+
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(158, 6, 185);
+        }
+
+        #element {
+            color: rgb(158, 6, 185);
+        }
+
+        .text-gery {
+            color: rgb(91, 79, 79);
+        }
+
+        .secondssection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondssection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondssection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+        }
+
+        .secondssection .vertical {
+            height: 95px;
+            width: 1px;
+            background-color: white;
+            margin: 0 13vw;
+
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -50px;
+            left: -25px;
+        }
+
+        .vertical-titel {
+            position: relative;
+            top: 65px;
+            width: 150px;
+            font-style: italic;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(2 11 51);
+        }
+
+        .footer {
+            display: flex;
+            padding: 15px 200px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 300px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightsection img {
+                width: 45vw;
+            }
+
+            .image-top {
+                top: 122px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondssection .vertical {
+                height: unset;
+            }
+
+            .vertical-titel,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .secondssection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 130vh;
+            }
+
+            .secondssection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            body {
+                min-width: fit-content;
+
+            }
+        }
+
+        .aboutme {
+            height: 340px;
+            padding-right: 35%;
+            text-align: right;
+            font-style: italic;
+            color: #8336c5;
+        }
+
+        .left img {
+            width: 200px;
+            margin: 10px 0;
+            padding-left: 10%;
+        }
+
+        .skills {
+            height: 300px;
+            padding-left: 150px;
+        }
+
+        .skills h2 {
+            color: #8336c5;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a herf="">Home</a></li>
+                <li><a herf="">About Me</a></li>
+                <li><a herf="">Eductional</a></li>
+                <li><a herf="#">skills</a></li>
+                <li><a herf="#">Contact Me</a></li>
+
+                </u#l>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class=" leftsection">
+                <h4>Hello</h4>
+                <div> I'm <span class="purple">Anubhav Gautam</span></div>
+                <div>I'm a student </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="Photo.jpeg" alt="">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="aboutme">
+            <h2>About me</h2>
+            <div class="left">
+                <img src="Photo.jpeg" alt="">
+            </div>
+            <div class="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br>
+                    Ipsam perferendis eaque illo eum sapiente possimus temporibus distinctio, minus esse? <br>
+                    Nemo quas minus quo, voluptas quasi animi consectetur delectus ducimus optio.</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="secondssection">
+            <span class="text-grey">What I have learn</span>
+            <h1>Eductional</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="school logo.jfif" alt="">
+                    <div class="vertical-titel">
+                        Class - 10th <br>
+                        (2018-2019)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id
+                        neque est reiciendis veniam fugit odio debitis architecto blanditiis impedit! Eveniet distinctio
+                        tempora quibusdam, ratione nemo quis fugit fugiat. Sapiente.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="school logo.jfif" alt="">
+                    <div class="vertical-titel">
+                        Class - 12th <br>
+                        (2020-2021)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id
+                        neque est reiciendis veniam fugit odio debitis architecto blanditiis impedit! Eveniet distinctio
+                        tempora quibusdam, ratione nemo quis fugit fugiat. Sapiente.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="gkv logo.jfif" alt="">
+                    <div class="vertical-titel">
+                        Bahelors <br>
+                        (2021-2025)
+                    </div>
+                    <div class="vertical-desc">I'm pursuing my B.tech Degree in Electronic And Communication Engineering 3rd year at gurukul kangri University (FET) , Haridwar , Uttarakhand..</div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="skills">
+            <h2>Personal skills</h2>
+            <ul>
+                <li>Team work with Responsibility</li><br>
+                <li>Creativity</li><br>
+                <li>Time Managment</li><br>
+                <li>positive Attitude</li><br>
+                <li>Desiging</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Contact Me</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><img src="call.jpeg" alt="" style="height: 35px; width: auto;"></li>
+                    <li> 123456789</li><br>
+                    <li><img src="linkdin.jpeg" alt="" style="height: 35px; width: auto; "></li>
+                    <li>ANUBHAV GAUTAM</li>
+                </ul>
+
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><img src="email.jpeg" alt="" style="height: 40px; width: auto; "></li>
+                    <li>anubhavgautam052005@gmail.com</li><br>
+                    <li><img src="instagram.jpeg" alt="" style="height: 35px; width: auto; "></li>
+                    <li>anubhav_gautam01</li>
+                </ul>
+            </div>
+            <div class="footer-rights">
+                copyright &#169; anubhavsportofolio.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Intersted in', 'wed developer', 'And', 'wed designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
